@@ -30,16 +30,16 @@ a26 = a(925000:948800); %muoi
 
 %--------------------tao tone cho giong noi--------------------------------
 %lam cho giong noi len xuong bang cach thay doi do dai tin hieu ghi am, quy
-%uoc cac gia tri theo not nhac de ghep vao voi nhac
+%uoc cac gia tri(tu 1 den 8) theo do cao cua not nhac de ghep vao voi nhac
 %thay doi tan so bang cach thay doi chieu dai cua tin hieu
-%y1 = y(1:1:length(y));     Do 
-%y2 = y(1:1.4:length(y));   Re
-%y3 = y(1:1.8:length(y));   Mi
-%y4 = y(1:2.2:length(y));   La
-%y5 = y(1:2.6:length(y));   Sol
-%y6 = y(1:3:length(y));     La
-%y7 = y(1:3.4:length(y));   Si
-%y8 = y(1:3.8:length(y));   Do
+%y1 = y(1:1:length(y));     1
+%y2 = y(1:1.4:length(y));   2
+%y3 = y(1:1.8:length(y));   3
+%y4 = y(1:2.2:length(y));   4
+%y5 = y(1:2.6:length(y));   5
+%y6 = y(1:3:length(y));     6
+%y7 = y(1:3.4:length(y));   7
+%y8 = y(1:3.8:length(y));   8
 x1 = a1(1:1.4:length(a1));
 x2 = a2(1:0.8:length(a2));
 x3 = a3(1:1.8:length(a3));
@@ -71,7 +71,7 @@ b = audioread('concobebe.wav');
 b = b(:,1);
 b = b(528000:970078); 
 y = (10.*x)+b; %tang bien do cua giong noi len 10 lan va cong voi tin hieu nhac
-sound (y, 48000);
+%sound (y, 48000);
 
 filename = 'melody.wav';       
      
